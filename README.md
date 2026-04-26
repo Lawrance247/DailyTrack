@@ -1,12 +1,12 @@
-# 📝 Task Manager Web Application
+#Task Manager Web Application
 
-## 📌 Overview
+##Overview
 
 This is a full-stack Task Manager web application that allows users to create, view, update, and delete tasks. The project demonstrates core software engineering concepts such as RESTful API design, database integration, and frontend-backend communication.
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 The goal of this project is to:
 
@@ -17,7 +17,7 @@ The goal of this project is to:
 
 ---
 
-## 🧱 Features
+## Features
 
 * Add new tasks
 * View all tasks
@@ -27,7 +27,7 @@ The goal of this project is to:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Frontend:**
 
@@ -46,7 +46,7 @@ The goal of this project is to:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 task-manager-app/
@@ -58,7 +58,7 @@ task-manager-app/
 
 ---
 
-## 🔁 API Endpoints
+## API Endpoints
 
 * GET /api/tasks → Retrieve all tasks
 * POST /api/tasks → Create a new task
@@ -67,7 +67,7 @@ task-manager-app/
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### 1. Clone the repository
 
@@ -90,7 +90,7 @@ Open `frontend/index.html` in your browser
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 * How to build a REST API using Express
 * How to connect a frontend to a backend
@@ -99,7 +99,7 @@ Open `frontend/index.html` in your browser
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
 * Add user authentication
 * Add task deadlines and priorities
@@ -107,7 +107,7 @@ Open `frontend/index.html` in your browser
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Lawrance Mavimbela
 BSc Computer Science & Business Computing
