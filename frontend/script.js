@@ -47,20 +47,28 @@ async function loadTasks() {
 // ADD TASK
 async function addTask() {
   const input = document.getElementById("taskInput");
+  
+  if (!input.value.trim()) return; // prevent empty tasks
 
-  await fetch(API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      title: input.value
-    })
-  });
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        title: input.value
+      })
+    });
 
-  input.value = "";
-  loadTasks();
+    if (!response.ok) {
+      console.error("Failed to add task:", response.status, await response.text());
+      return;
+    }
+
+    input.value = "";
+    loadTasks();
+  } catch (err) {
+    console.error("Network error:", err);
+  }
 }
-
-// LOAD ON START
-loadTasks();

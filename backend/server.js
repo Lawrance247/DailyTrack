@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: "https://daygoals.netlify.app/"
+  origin: "https://daygoals.netlify.app"
 }));
 
 //THEN routes
