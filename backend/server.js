@@ -10,7 +10,10 @@ const app = express();
 
 // THEN middleware
 app.use(express.json());
-app.use(cors());
+
+app.use(cors({
+  origin: "https://daygoals.netlify.app/"
+}));
 
 //THEN routes
 app.use("/api/tasks", taskRoutes);
