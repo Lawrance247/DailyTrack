@@ -1,4 +1,4 @@
-const API_URL = "http://daygoals.onrender.com/api/tasks";
+const API_URL = "https://daygoals.onrender.com/api/tasks";
 
 // LOAD TASKS
 async function loadTasks() {
